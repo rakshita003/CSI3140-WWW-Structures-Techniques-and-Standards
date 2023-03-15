@@ -1,0 +1,51 @@
+/*  
+author:Rakshita Mathur
+Student ID:300215340
+Date: 2023-03-06
+Couse: CSI3140
+Description: Assignment 3 Question 5-CSS file 
+*/
+#race-track {
+  position: relative;
+  width: 700px;
+  height: 100px;
+  margin: 50px auto;
+  background-color: #eee;
+}
+#tortoise {
+  position: absolute;
+  top: 20px;
+  width: 30px;
+  height: 30px;
+  background-color: brown;
+  border-radius: 50%;
+}
+#hare {
+  position: absolute;
+  top: 50px;
+  width: 30px;
+  height: 30px;
+  background-color: gray;
+  border-radius: 50%;
+}
+#finish-line {
+  position: absolute;
+  top: 0;
+  width: 5px;
+  height: 100%;
+  background-color: black;
+}
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #3e8e41;
+}

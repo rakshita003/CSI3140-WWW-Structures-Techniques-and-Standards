@@ -1,0 +1,58 @@
+<!-- 
+author:Rakshita Mathur
+Student ID:300215340
+Date: 2023-03-06
+Couse: CSI3140
+Description: Assignment 3 Question 1
+-->
+
+<DOCTYPE html>
+<html>
+  <head>
+    <title>Assignment-3 Question 1</title>
+    <meta charset="utf-8" />
+    <style>
+      .button-container {
+        margin-top: 10px;
+      }
+    </style>
+
+    <script>
+      function celsius(F) {
+        return (5.0 / 9.0) * (F - 32);
+      }
+
+      function fahrenheit(C) {
+        return (9.0 / 5.0) * C + 32;
+      }
+
+      function convertToFarenheit() {
+        var val;
+        val = document.getElementById("val").value;
+        var f = fahrenheit(val);
+        document.getElementById("result").innerHTML = f + "°F";
+      }
+
+      function convertToCelsius() {
+        var val;
+        val = document.getElementById("val").value;
+        var c = celsius(val);
+        document.getElementById("result").innerHTML = c + "°C";
+      }
+    </script>
+
+  </head>
+
+  <body bgcolor="pink">
+    <h1>Temperature Converter in Fahrenheit or Celsius</h1>
+    <label for="val">Enter temperature: </label>
+    <input type="text" id="val" />
+    <div class="button-container">
+      <!--calling functions-->
+      <button onclick="convertToFarenheit()">Converting to Fahrenheit</button> 
+      <button onclick="convertToCelsius()">Converting to Celsius</button>
+    </div>
+    <p id="result"></p>
+  </body>
+  
+</html>

@@ -1,0 +1,28 @@
+<!--
+author: Rakshita Mathur
+date: 2023-02-06
+Course: CSI-3140 WWW structures and design
+Assignment 2 Question 6
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Assignment 2 Question 6</title>
+        <script>
+            var number = prompt("Enter a five digit number");
+            var reverse = number.split("").reverse().join("");
+            if (number.length != 5) {
+                alert("The number is not five digits long");
+            } else if (number == reverse) {
+                alert("The number is a palindrome");
+            } else {
+                alert("The number is not a palindrome");
+            }
+        </script>
+    </head>
+    <body bgcolor="pink">
+        <p>Refresh to Run the program again.</p>
+    </body>
+</html>

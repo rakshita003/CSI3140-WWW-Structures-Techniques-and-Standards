@@ -1,0 +1,51 @@
+<!--
+author: Rakshita Mathur
+date: 2023-02-06
+Course: CSI-3140 WWW structures and design
+Assignment 2 Question 4
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Assignemnt 2 Question 4</title>
+        <style>
+            #square {
+                width: 100px;
+                height: 100px;
+                background-color: #195ca9;
+                position: absolute;
+                top: 0;
+                left: 0;
+                -webkit-animation: move 5s linear infinite;
+                -moz-animation: move 5s linear infinite;
+                animation: move 5s linear infinite;
+            }
+            @-webkit-keyframes move {
+                0% { top: 0; left: 0; }
+                25% { top: 0; left: 300px; }
+                50% { top: 300px; left: 300px; }
+                75% { top: 300px; left: 0; }
+                100% { top: 0; left: 0; }
+            }
+            @-moz-keyframes move {
+                0% { top: 0; left: 0; }
+                25% { top: 0; left: 300px; }
+                50% { top: 300px; left: 300px; }
+                75% { top: 300px; left: 0; }
+                100% { top: 0; left: 0; }
+            }
+            @keyframes move {
+                0% { top: 0; left: 0; }
+                25% { top: 0; left: 300px; }
+                50% { top: 300px; left: 300px; }
+                75% { top: 300px; left: 0; }
+                100% { top: 0; left: 0; }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="square"></div>
+    </body>
+</html>

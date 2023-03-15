@@ -1,0 +1,50 @@
+<!--
+author: Rakshita Mathur
+date: 2023-02-06
+Course: CSI-3140 WWW structures and design
+Assignment 2 Question 7
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+        var productNumber, quantity, price, total = 0;
+        var sales = [0, 0, 0, 0, 0];
+        while (true) {
+          productNumber = parseInt(prompt("Enter product number (1-5), or -1 to end"));
+          if (productNumber == -1) {
+            break;
+          }
+          quantity = parseInt(prompt("Enter quantity sold"));
+          switch (productNumber) {
+            case 1:
+              price = 2.98;
+              break;
+            case 2:
+              price = 4.5;
+              break;
+            case 3:
+              price = 9.98;
+              break;
+            case 4:
+              price = 4.49;
+              break;
+            case 5:
+              price = 6.87;
+              break;
+            default:
+              alert("Invalid product number");
+              continue;
+          }
+          sales[productNumber - 1] += price * quantity;
+        }
+        document.write("<table><tr><th>Product</th><th>Total Sales</th></tr>");
+        for (var i = 0; i < sales.length; i++) {
+          document.write("<tr><td>Product " + (i + 1) + "</td><td>$" + sales[i].toFixed(2) + "</td></tr>");
+        }
+        document.write("</table>");
+    </script>
+  </head>
+  <body bgcolor="pink">
+  </body>
+</html>

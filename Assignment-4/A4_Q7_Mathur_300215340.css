@@ -1,0 +1,38 @@
+/* author:Rakshita Mathur
+Student id: 300215340
+Course: csi 3140
+Assignment: 4 Question 7 CSS */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+  width: 50%;
+  margin-top: 50px;
+}
+
+th {
+  background-color: #d3d3d3;
+  font-weight: bold;
+  text-align: left;
+  padding: 10px;
+}
+
+td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+td:first-child {
+  font-weight: bold;
+}

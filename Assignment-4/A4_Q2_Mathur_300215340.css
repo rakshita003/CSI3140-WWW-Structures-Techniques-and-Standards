@@ -1,0 +1,21 @@
+/* author:Rakshita Mathur
+Student id: 300215340
+Course: csi 3140
+Assignment: 4 Question 2 CSS */
+
+table {
+	border-collapse: collapse;
+	margin: auto;
+}
+td {
+	width: 50px;
+	height: 50px;
+	border: 1px solid black;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 24px;
+	cursor: pointer;
+}
+td[data-row="4"], td[data-col="4"] {
+	background-color: gray;
+}
